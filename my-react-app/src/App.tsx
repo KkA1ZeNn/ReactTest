@@ -14,6 +14,10 @@ const App = () => {
     }
   ])
 
+  const deletePost = (id: number) => {
+    setPosts(posts.filter(post => post.id !== id))
+  }
+
   return (
     <div className='app-container'>
       <div className='left-side'>
