@@ -49,9 +49,16 @@
     padding-bottom: 12px;
 }
 
-.create-post-list-form__button:hover {
+.create-post-list-form__button:hover:not(:disabled) {
     border: none;
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.9);
     cursor: pointer;
     transition: all 0.1s ease;
+}
+
+.create-post-list-form__button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #666;
+    color: #999;
 }

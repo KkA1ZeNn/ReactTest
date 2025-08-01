@@ -1,8 +1,8 @@
-import React from 'react'
 import Post, { type PostProp } from '../Post.component/Post'
 import './PostList.css'
 
 const Postlist = ({posts}: {posts: PostProp[]}) => {
+
   return (
     <>
       <h1 className='postlist__title'>Список постов</h1>
