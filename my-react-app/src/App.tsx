@@ -65,12 +65,11 @@ const App = () => {
     setPosts(posts.filter(post => post.id !== deletedPost.id))
   }
 
-  const sortPosts = (sort: 'title' | 'text') => {
+  const sortPosts = (sort: SortType) => {
     setSelectedSort(sort)
   }
 
   const filteredAndSortedPosts = useMemo(() => {
-   console.log("отработал")
     const filtered = posts.filter(post => 
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.text.toLowerCase().includes(searchQuery.toLowerCase())
