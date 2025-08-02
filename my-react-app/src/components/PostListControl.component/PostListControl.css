@@ -1,0 +1,33 @@
+.post-list-control__title {
+   font-size: 32px;
+   font-weight: 700;
+   text-align: center;
+}
+
+.post-list-control__select,
+.post-list-control__input {
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #fff;
+   background-color: #252424;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 400;
+   outline: none;
+   resize: none;
+   width: 100%;
+}
+
+.post-list-control__wrapper {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.post-list-control__select:focus,
+.post-list-control__input:focus {
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.9);
+    transition: all 0.1s ease;
+}
